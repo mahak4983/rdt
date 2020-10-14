@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: rgb(255,255,255);
+    color: #555;
+    font-family: 'Lato','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(214, 214, 214, 0.3),rgba(214, 214, 214, 0.3)),url(img/signin.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;  
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;  /*centering*/
+    align-items: center;      /*centering*/
+    display: flex;
+    
+}
+
+.modal-content {
+    width:800px;
+    height: 355px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.button {
+    text-decoration: none;
+    border: 1.14px solid rgb(122,58,149) ;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: 300;
+    color: rgb(122,58,149) ;
+    transition: 0.3s;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: rgb(122,58,149);
+    border: 1.14px solid rgb(122,58,149) ;
+}
+
+.lmao {
+    margin-top: 35px;
+    margin-top: 47px;
+}
+
+input {
+    width: 60%;
+    height: 36px;
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 40px auto 35px auto; 
+    font-size: 86%;
+    color: rgb(65, 65, 65);
+    border: none;
+    background-color: rgb(248, 248, 248);
+    transition: 0.3s;
+}
+
+input:hover {
+    background-color: rgb(240, 240, 240);
+    padding: 14px;
+}
+
+.close {
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 180%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close:hover {
+    font-weight: 400;
+}
+
+*:focus {outline: none;}
