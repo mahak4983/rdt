@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #fff;
+    background: rgb(122,58,149);
+}
+
+html,
+body {
+    background: rgb(228, 228, 228);
+    color: #555;
+    font-family: 'Lato','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+h1,h2 {    
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+h3 {
+    text-transform: none;
+    font-weight: 500;
+    letter-spacing: 0.2px; 
+    font-size: 100%;
+    color: rgb(77, 77, 77);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%; 
+    word-spacing: 4px;
+    font-weight: 400;
+}
+h1:first-line {
+    font-weight: 300;
+    font-size:140%;
+}
+
+*:focus {outline: none;}
+
+.row-nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    letter-spacing: 0px;
+    height: 55px;
+    font-size: 85%;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+}
+
+.navigation {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.98);
+    width: 100%;
+    margin-left: -3%;
+    margin-right: auto;
+    border-bottom: 1.5px solid rgb(231, 230, 230);
+}
+a {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+
+a:hover,
+a:active {
+    color: rgb(122,58,149);
+    font-weight: 500;  
+}
+
+.row-nav li {
+    list-style: none;
+    display: inline-block;
+    margin:0 40px;
+}
+ .rite {
+     float: right;
+ }
+
+#search-bar {
+    width: 400px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(248, 248, 248);
+    border: none;
+    height: 28px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 84%;
+    /* transition: 0.2s; */
+}
+
+#search-bar:hover,
+#search-bar:visited {
+    background-color: #fff;
+    border: 1px solid rgb(122,58,149);
+}
+
+.rite {
+    margin-top: 3.7px;
+}
+
+/*---------------------------------*/
+/* MAIN CONTENT */
+/*---------------------------------*/
+
+.main-content {
+    padding: 20px;
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.main-content p {
+    margin: 20px 10px;
+    text-align: justify;
+    font-size: 89%;
+}
