@@ -1,7 +1,7 @@
 const express = require('express');
 
 const postController = require('../controllers/post');
-const isAuth =  require('../middleware/is-auth');
+const isAuth = require('../middleware/is-auth');
 
 
 const router = express.Router();
@@ -13,3 +13,5 @@ router.post('/post', isAuth, postController.postSinglePost);
 router.get('/posts', postController.getPosts);
 
 router.post('/addComment', isAuth, postController.addComment);
+
+module.exports = router;
