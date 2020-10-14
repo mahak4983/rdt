@@ -13,3 +13,5 @@ router.post('/post', isAuth, postController.postSinglePost);
 router.get('/posts', postController.getPosts);
 
 router.post('/addComment', isAuth, postController.addComment);
+
+module.exports = router;
