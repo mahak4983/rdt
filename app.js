@@ -4,12 +4,15 @@ const path = require('path');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
-const path = require('path');
+
 
 //MongoURI;
-const MONGODB_URI = '';
+const MONGODB_URI = 'mongodb+srv://MahakC:nodecomplete123@cluster0-nlcrx.mongodb.net/rdt?retryWrites=true&w=majority';
 
 const app = express();
+
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
 /* routes */
 const authRoutes = require('./routes/auth');
