@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/css/post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <title>Post</title>
+</head>
+
+<body>
+    <div class="row-nav">
+        <div class="navigation">
+            <nav>
+                <div class="col span-1-of-2 ">
+                    <ul>
+                        <li><a href="index.html" id="feed" target="_blank">Home</a></li>
+                        <input type="search" id="search-bar" placeholder="Search" spellcheck="false">
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="rite">
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">@UserName</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <% if (errorMessage) { %>
+        <div class="user-message user-message--error"><%= errorMessage %></div>
+        <% } %>
+        <form action="/post" method="POST">
+            <div class="content">
+                <input class="x c1" name="title" type="text" id="title" placeholder="Title">
+            </div>
+            <div class="content">
+                <textarea class="x c2" name="message" placeholder="Enter your text" id="message"></textarea>
+            </div>
+            <button type="submit" class="button">Button</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
